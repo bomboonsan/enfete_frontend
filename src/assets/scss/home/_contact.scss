@@ -1,0 +1,124 @@
+#contact {
+    margin-bottom: 150px;
+}
+
+.contactRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 70px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.contactImage {
+    flex-basis: 40%;
+    width: 40%;
+    @media screen and (max-width: 768px) {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    img {
+        width: 80%;
+    }
+}
+
+.contactContent {
+    padding-inline: 15px;
+    flex: 1;
+    .header {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        .icon {
+            flex: initial;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: $yellow;
+        }
+        .title {
+            flex: initial;
+
+            color: $purple;
+            font-family: 'Raleway', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.contactForm {
+    width: 100%;
+    .contactFormGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    .contactFormRow {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        .input {
+            flex-basis: 50%;
+            width: 50%;
+        }
+    }
+    input {
+        width: 100%;
+        border: 1px solid $purple_2;
+        border-radius: 8px;
+        padding: 10px 15px;
+        color: $black;
+    }
+
+    .text {
+        margin-top: 15px;
+        textarea {
+            width: 100%;
+            border: 1px solid $purple_2;
+            border-radius: 8px;
+            padding: 10px 15px;
+            color: $black;
+        }
+    }
+    .submit {
+        margin-top: 15px;
+    }
+}
+
+.btn-submit {
+    border: 0;
+    outline: 0;
+
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 30px;
+    background-color: $yellow;
+    border-radius: 5px;
+    color: $purple;
+    font-family: 'Raleway', sans-serif;    
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    img {
+        height: 18px;
+    }
+}

@@ -1,0 +1,4 @@
+browser-sync start --server --files 'css/*.css, js/*.js, *html' npm init
+
+
+browser-sync start --server --files 'assets/css/*.css, assets/js/*.js, *html' npm init

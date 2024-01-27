@@ -1,0 +1,16 @@
+$purple : #432961;
+$purple_2 : #9D79C7;
+$white : #fff;
+$black : #291341;
+$yellow : #FEDC2A;
+
+:root {
+    --GD_02: linear-gradient(to right, #5F5FF6, #2C8CF4, #2BC48A);
+    --BG_GD_01: linear-gradient(to right, #B3B3FC, #C7EBFF, #FBFFFF);
+    --GD_w1: radial-gradient( #C5D3F7 100%, #CBD7F4 79.17%, #E2E4E9 0%);
+    --GD_02_2: linear-gradient(to right, #C29BEF, #FEDC2A);
+}
+
+// SIZE
+
+$containerWidth: 1460px;

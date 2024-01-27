@@ -1,0 +1,12 @@
+.container {
+    max-width: $containerWidth;
+    margin-inline: auto;
+    padding: 0 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}

@@ -1,0 +1,131 @@
+.site-footer {
+    padding-block: 75px;
+}
+
+.footer-bar {
+    border-radius: 200px;
+    background-color: $black;
+    background-image: url('../images/footer-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    padding: 75px 100px;
+    
+    min-height: 300px;
+
+    @media screen and (max-width: 768px) {
+        padding: 25px 50px;
+        border-radius: 50px;
+    }
+}
+.footerRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.footerLogo {
+    flex-basis: 155px;
+    width: 155px;
+}
+
+.footerMenu {
+    flex: auto;
+}
+
+.footerMenuRow {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    .colMenu {
+        padding: 0 20px;
+        flex-basis: 50%;
+        width: 50%;
+
+        h6 {
+            margin: 0 0 15px 0;
+            font-family: 'Raleway', sans-serif;    
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 32px; /* 133.333% */
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+        }
+        a {
+            color: #FFF;
+        }
+    }
+}
+
+.footerSocial {
+    flex: initial;        
+}
+.socialList {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.footerBottomRow {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    font-family: 'Raleway', sans-serif;   
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .footerBottomText {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 200% */
+        color: $black;
+    }
+    .footerBottomLink {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 200% */
+        color: $black;
+
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+
+        a {
+            color: $black;
+        }
+    }
+}
